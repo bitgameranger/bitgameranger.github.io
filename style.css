@@ -1,0 +1,345 @@
+@font-face {
+font-family: Deutschlander;
+src: url("font/Deutschlander.otf") format("opentype");
+}
+
+@font-face {
+font-family: BebasNeue;
+font-weight: bold;
+src: url("font/BebasNeue.otf") format("opentype");
+}
+
+@font-face {
+font-family: couture;
+font-weight: bold;
+src: url("font/couture-bld.otf") format("opentype");
+}
+
+body {
+    font-family:"couture","Helvetica Neue",Helvetica,Arial,sans-serif;;
+    
+}
+
+.navbar .navbar-brand {
+    color: #777777;
+}
+.navbar .brand-name:hover {
+    text-decoration: underline;
+}
+
+/* ChatBox */
+
+.chat-list {
+    overflow-y: scroll;
+    height: 215px;
+    word-wrap: break-word;
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+.chat-list li {
+    /* Since .focus() is used to scroll to last message item,
+       turn off the outline that appears by default */
+    outline: none;
+}
+
+/* Animation */
+
+.rotate {
+    display: inline-block;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotate;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -o-animation-name: rotate;
+    -o-animation-duration: 2s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-webkit-keyframes rotate {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes rotate {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+
+@-o-keyframes rotate {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+/* Bootstrap overrides */
+
+/* Turn off redundant text-shadow */
+.btn kbd,
+.btn .label {
+    text-shadow: none;
+}
+
+/* Progress Bar */
+
+.progress-bar-grey {
+    background-color: #767676;
+    background-image: none;
+}
+
+.balance-text{
+    background-color: #1b1e25;
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+#grand-text{
+    transition: all 0.5s ease;
+    text-align: center;
+    width: 100%;
+    background-color: #E9573E;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 5px;
+    box-shadow: 0px 3px 0px #B3422F;
+    z-index: 10;
+    }
+    
+#grand-text:hover{
+    transition: all 0.5s ease;
+    color:#1b1e25;
+    background-color: #F55B41;
+    box-shadow: 0px 3px 0px #963727;
+    
+}
+#grand:hover{
+    transition: all 0.5s ease;
+    color:#E9573E;
+    
+}
+#grand{
+    transition: all 0.5s ease;
+    width: 100%;
+    text-align: center;
+    background-color: #1b1e25;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 7px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    box-shadow: inset 0px 1px 50px #101010;
+}
+#major-text{
+    transition: all 0.5s ease;
+    text-align: center;
+    width: 100%;
+    background-color: #1a75ff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 5px;
+    box-shadow: 0px 3px 0px #1559C1;
+    z-index: 10;
+    }
+#major-text:hover{
+    transition: all 0.5s ease;
+    color:#1b1e25;
+    background-color:#0065FF;
+    box-shadow: 0px 3px 0px #0F3B80;
+
+}
+#major:hover{
+    transition: all 0.5s ease;
+    color:#1a75ff;
+
+}
+#major{
+    transition: all 0.5s ease;
+    width: 100%;
+    text-align: center;
+    background-color: #1b1e25;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 7px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    box-shadow: inset 0px 1px 50px #101010;
+}
+#minor-text{
+    transition: all 0.5s ease;
+    text-align: center;
+    width: 100%;
+    background-color: #32CD32;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 5px;
+    box-shadow: 0px 3px 0px #259425;
+    z-index: 10;
+    }
+#minor-text:hover{
+    transition: all 0.5s ease;
+    color:#1b1e25;
+    background-color:#42FB42;
+    box-shadow: 0px 3px 0px #165A16;
+
+}
+#minor{
+    transition: all 0.5s ease;
+    width: 100%;
+    text-align: center;
+    background-color: #1b1e25;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 7px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    box-shadow: inset 0px 1px 50px #101010;
+}
+#minor:hover{
+    transition: all 0.5s ease;
+    color:#32CD32;
+
+}
+
+#jackpot_bg{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    display:none;
+}
+
+#jackpot_box{
+    background-color: brown;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 600px;
+    top: 200px;
+    border-radius: 5px;
+    z-index:1000;
+    text-align: center;
+    padding: 40px;
+    box-shadow: 0px 5px 100px red;
+    font-size: 15px;
+    display:none;
+}
+
+#animation{
+    
+    text-align:center;
+    font-size: 40px;
+    text-shadow: #1b1e25 2px 2px 1px;
+}
+
+.winBet{
+    color:#32CD32;
+}
+.lossBet{
+    color:#E9573E;
+}
+
+#strategies{
+    font-size: 15px;
+}
+
+#start-stop{
+    width: 100%;
+    padding: 15px;
+}
+
+
+.noselect {
+  cursor:default;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+#return-to-base-off{
+    font-size: 12px;
+    background-color: #1b1e25;
+    color: #777;
+}
+
+#return-to-base-on{
+    font-size: 12px;
+    background-color: #39b54a;
+}
+
+#label{
+    font-size: 12px;
+    background-color: #1b1e25;
+    color: #fff;
+    display: table;
+}
+
+#hashLabel{
+    font-size: 9px;
+    color: #FFF;
+    font-family: monospace;
+    display: block;
+}
+
+#faq_box{
+    background-color: #fefefe;
+    color: #555;
+    width: 100%;
+    border-radius: 2px;
+    z-index:1000;
+    padding: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family:  'Open Sans',Sans-Serif;
+}
+
+.headerFAQ{
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+    background-color: #2c303c;
+}
+
+.question{
+    background-color: #ededed;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.answer{
+    padding: 25px;
+    font-size: 13px;
+    font-weight: normal;
+}
